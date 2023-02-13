@@ -14,8 +14,8 @@ It is basically a Shopping website along with Appointment Booking using MySql as
 ## Cut to What I made!
 ## AFTER
 ![After](https://user-images.githubusercontent.com/121155302/218396732-2225da46-2ad5-4d26-9e94-b8c1471ff4d0.JPG)
-![after2](https://user-images.githubusercontent.com/121155302/218398842-a279c57e-dc1c-49f1-833d-e723ecbf7408.JPG)
-![after3](https://user-images.githubusercontent.com/121155302/218398877-78a9d0d1-3a87-4b89-a23c-60f1d2947b5d.JPG)
+![after2](https://user-images.githubusercontent.com/121155302/218399566-21f4023f-358f-4088-b064-8e6be25ac0cf.JPG)
+![after3](https://user-images.githubusercontent.com/121155302/218399591-8afd72d5-fdd4-4071-b725-37489d2332c3.JPG)
 
 You can Checkout the runnning through the pictures in the following Google Slide link:
 https://docs.google.com/presentation/d/1lG93MtTRdiWkhiI_ccTp__2WKt62zBkT8cu2Y9LXZiQ/edit#slide=id.gcad179e71b_0_31
