@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HENNA WEBSITE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	  <link rel="stylesheet" type="text/css" href="main.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+<body style="background:#ffffff ;font-family:'Georgia',serif;;">	
+<nav class="navbar navbar-expand-md fixed-top">
+  <a class="navbar-brand" href="#"><img src="logo.jpg" alt"></a>
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main-navigation">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+    				<a class="nav-link" href="index.html"> HOME </a></i>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"  href="gallery.html"> GALLERY </a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" > SERVICES </a>
+					<div class="dropdown-menu">
+	  <a class="dropdown-item" href="getappointment.html">ALL</a>
+      <a class="dropdown-item" href="bridal.html">BRIDAL</a>
+      <a class="dropdown-item" href="celebration.html">CELEBRATION</a>
+      <a class="dropdown-item" href="special.html">SPECIAL</a>
+	  <a class="dropdown-item" href="black.html">BLACK HENNA</a>
+    </div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"  href="shoppingcart.html"> ORDER </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="course.html"> COURSE </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html"> ABOUT </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html"> CONTACT </a>
+				</li>
+				
+    </ul>
+  </div>
+</nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+ <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="coverorder.jpg" alt="" width="100%" height="100%"  >
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+    <div class="container Billing" style="font-family: Arial; margin-top: 30px; margin-bottom: 30px; box-sizing: border-box">
+      <form name="myform" action="address.php" onsubmit="return validateForm()" method="post">
+       <div class="form-group">
+          <div class="col-50">
+            <h3>Shipping Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" pattern="[a-zA-Z\s]+" title="Please enter proper Fisrt name and last name in letters" name="name">
+            <label for="phone"><i class="fa fa-phone"></i>Phone Number</label>
+            <input type="text" id="city" pattern="[7-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" placeholder="Please enter Phone Number" name="phone" required>
+			<label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter valid email eg: nick123@gmail.com" placeholder="Please enter Email" name="email">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" placeholder="Proper Address to be mentioned" name="address">
+			<label for="adr"><i class="fa fa-address-card-o"></i> State</label>
+            <input type="text" id="adr" placeholder="Proper State to be mentioned" name="state" required>
+			<label for="adr"><i class="fa fa-address-card-o"></i>Pincode</label>
+            <input type="text" id="adr" placeholder="Proper Pincode to be mentioned" name="pin" required>
+              </div>
+          </div>
+        <input type="submit" value="Continue to checkout" class="btn">
+		</form>
+    </div>
+	<script>
+	function validateForm() {
+	var x = document.forms["myform"]["state"].value;
+  if (x == "") {
+    alert("State must be filled out");
+    return false;
+  }
+  var x = document.forms["myform"]["pin"].value;
+  if (x == "") {
+    alert("Pincode must be filled out");
+    return false;
+  }
+}
+	</script>
+<style>
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container billing {
+font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+</style>
+</div>
+<footer class="page-footer" style="margin-top: 30px;background-color: #222;color: #ccc; padding: 60px 0 30px">
+  <div class="container">
+   <div style="text-align: center;">
+  <a href="cofcard.html" class="w3-button w3-light-grey border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+	<div>
+	<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<style>
+  .fa {
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+</style>
+</div>
+    <div class="row" style="margin-top:10px">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+      <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+      <p>Henna is a way to express ourself. It is a beauty on it's own. Without henna Bride is never all ready. So include henna your source of happiness through us.</p>
+      <p></p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h6 class="text-uppercase font-weight-bold">Contact</h6>
+      <p>20/03 Aspire Apt, Modern road, Alibaug
+      <br/>nkadri@gmail.com
+      <br/>+ 91 1111100000
+      <br/>+ 91 0000011111</p>
+    </div>
+  </div>
+  <div class="footer-copyright text-center" style="color: #666; padding: 40px 0;">© henna by namira</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="validation.js"></script>
+</body>
+</html>
